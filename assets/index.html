@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<title> Site - Web visual</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./responsive-slide/ResponsiveSlides.js-master/responsiveslides.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https: //fonts.googleapis.com/css2? family= Montserrat:wght@200;300 & display=swap" rel="stylesheet">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="./responsive-slide/ResponsiveSlides.js-master/responsiveslides.min.js"></script>
+	<script>
+		// You can also use "$(window).load(function() {"
+		$(function () {
+			// Slideshow 4
+			$("#slider4").responsiveSlides({
+				auto: true,
+				pager: false,
+				nav: true,
+				speed: 500,
+				namespace: "callbacks",
+
+			});
+
+		});
+	</script>
+</head>
+
+<body>
+
+	<header class="cabecalho">
+		<div class="container">
+			<h1 class="cabecalho__titulo">
+				<a href="#">Web Visual Graphics</a>
+			</h1>
+
+			<nav class="cabecalho__principal">
+				<a class="cabecalho__principal-link" href="#">Home</a>
+				<a class="cabecalho__principal-link" href="#">Acessiblidade</a>
+				<a class="cabecalho__principal-link" href="#">Sobre Nos</a>
+				<a class="cabecalho__principal-link" href="#">Mais Informaçoes</a>
+			</nav>
+		</div>
+	</header>
+
+	<div id="wrapper">
+
+		<!-- Slideshow 4 -->
+		<div class="banner__principal">
+			<ul class="rslides" id="slider4">
+				<li>
+					<img src="./img/1.jpg" alt="">
+					<a class="caption"> Primeira imagem</a>
+				</li>
+				<li>
+					<img src="img/2.jpg" alt="">
+					<a class="caption"> Segunda imagem</a>
+				</li>
+				<li>
+					<img src="img/3.jpg" alt="">
+					<a class="caption" href="#">Terceira Imagem</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<main class="caixas__mensagens">
+		<section class="container">
+			<h3 class="caixas__mensagens-titulos">Acessibilidades</h3>
+
+			<nav>
+				<ul class="caixas__mensagens-caixa">
+					<li class="caixas__mensagens-conteudos">
+						<a href="#"></a>
+						<p></p>
+					</li>
+
+					<li class="caixas__mensagens-conteudos">
+						<a href="#"></a>
+						<p></p>
+					</li>
+
+					<li class="caixas__mensagens-conteudos">
+						<a href="#"></a>
+						<p></p>
+					</li>
+
+					<li class="caixas__mensagens-conteudos">
+						<a href="#"></a>
+						<p></p>
+					</li>
+				</ul>
+			</nav>
+
+		</section>
+	</main>
+
+
+</body>
+
+</html>

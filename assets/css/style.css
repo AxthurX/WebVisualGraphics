@@ -1,0 +1,149 @@
+@import url('../responsive-slide/ResponsiveSlides.js-master/demo/demo.css');
+
+@font-face {
+  font-family: 'icones';
+  src: url(../font/icones.ttf);
+}
+
+body {
+  background-color: #F2F5F7;
+  width: 89%;
+  font: 14px/20px "Montserrat", sans-serif;
+  margin: auto auto;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cabecalho {
+  background-color: #FFF;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__titulo {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.cabecalho__titulo a {
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+}
+
+.cabecalho__principal {
+  display: flex;
+}
+
+.cabecalho__principal-link {
+  font-size: 17px;
+  padding: 10px;
+  margin: 0 0 10px 10px;
+  color: #616266;
+  background-color: #FFF;
+  transition: .5s;
+  display: block;
+
+  border-radius: 5px;
+  border: 1px solid #9799A6;
+}
+
+.banner__principal {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.titulo__principal {
+  font: 40px/60px "Montserrat", sans-serif;
+  color: rgb(14, 14, 14);
+  font-weight: 200;
+}
+
+.titulo__segundario {
+  font: 16px/20px "Montserrat", sans-serif;
+}
+
+.caixas__mensagens {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.caixas__mensagens-titulos {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 10rem 0 5rem 0;
+  text-align: center;
+}
+
+.caixas__mensagens-caixa {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caixas__mensagens-conteudos {
+  border-radius: 10px;
+  width: 47%;
+  height: 190px;
+  background-color: #FFF;
+  margin: 1%;
+  transition: .3s;
+  box-shadow: 2px 2px 2px #CCC;
+  position: relative;
+}
+
+.caixas__mensagens-conteudos a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1480px) {
+
+.cabecalho {
+  background-color: #FFF;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalho__principal-link {
+  padding: 10px;
+  font-size: 19px;
+  margin: 0 0 10px 10px;
+  color: #616266;
+  background-color: #FFF;
+  transition: .5s;
+  display: block;
+
+  border-radius: 5px;
+  border: 1px solid #9799A6;
+}
+
+.caixas__mensagens-conteudos {
+  border-radius: 10px;
+  width: 48%;
+  height: 260px;
+  background-color: #FFF;
+  margin: 1%;
+  transition: .3s;
+  box-shadow: 2px 2px 2px #CCC;
+  position: relative;
+}
+}
