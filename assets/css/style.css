@@ -171,8 +171,8 @@ main {
 }
 
 .circulo {
-	width: 200px;
-	height: 200px;
+	width: 700px;
+	height: 700px;
 	border-radius: 50%;
 	overflow: hidden;
 	transition: .3s ease;
