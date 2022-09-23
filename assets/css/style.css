@@ -113,7 +113,9 @@ main {
 }
 
 .caixas__conteudos {
-	overflow: hidden;
+	text-overflow: clip;
+	white-space: wrap ;
+	display: block;
 }
 
 .caixas__mensagens-caixa {
@@ -131,6 +133,7 @@ main {
 	transition: .3s;
 	box-shadow: 2px 2px 2px #CCC;
 	position: relative;
+	text-overflow: ellipsis;
 }
 
 .caixas__mensagens-conteudos a {
@@ -144,11 +147,17 @@ main {
 	top: 0;
 	left: 0;
 }
+/*
+.caixas__imagens-conteudos {
+	width: 110% !important;
+} */
 
 .caixas__mensagens-texto {
-	text-align: justify;
+	text-align: center;
 	line-height: 1.5;
 	overflow: hidden;
+	writing-mode: sideways-rl;
+	white-space: wrap;
 }
 
 .conteudo__informacao {
