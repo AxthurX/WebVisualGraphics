@@ -81,12 +81,20 @@ main {
 }
 
 .banner__principal {
-	margin-bottom: 50px;
 	position: relative;
+	background: center / cover;
+	width: 50%;
+	height: 50%;
+
 }
 
 .rslides {
-	border-radius: 4px;
+	border-radius: 50%;
+}
+
+.banner__principal .container {
+	width: auto;
+	text-align: -webkit-center;
 }
 
 .titulo__principal {
