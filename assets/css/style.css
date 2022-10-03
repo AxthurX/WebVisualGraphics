@@ -82,10 +82,15 @@ main {
 
 .banner__principal {
 	position: relative;
-	background: center / cover;
+	background: center;
 	width: 50%;
 	height: 50%;
+	display: -webkit-inline-flex;
+}
 
+.banner__img {
+
+	width: 100%;
 }
 
 .rslides {
