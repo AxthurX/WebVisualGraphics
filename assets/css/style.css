@@ -20,7 +20,6 @@ main {
 .cabecalho {
 	/* background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%); */
 	background-color: rgb(203, 215, 255);
-	padding: 20px 0;
 	display: flex;
 	justify-content: center;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
@@ -31,17 +30,10 @@ main {
 	display: flex;
 	align-items: center;
 }
-
-.cabecalho__titulo {
-	font-weight: bold;
-	font-size: 2em;
-	margin-bottom: 20px;
-}
-
-.cabecalho__titulo-negrito {
-	font-weight: 700;
-	margin-left: 20px;
-	text-align: center;
+.logotipo {
+	width: auto;
+	max-height: 134px;
+	padding: 0;
 }
 
 .cabecalho__principal {
@@ -84,22 +76,20 @@ main {
 	position: relative;
 	background: center;
 	width: 50%;
-	height: 50%;
-	display: -webkit-inline-flex;
+	margin: auto auto;
 }
 
-.banner__img {
+.callbacks_nav {
+	display: table;
+}
 
-	width: 100%;
+#wrapper {
+	width: 50% ;
+	margin: auto auto;
 }
 
 .rslides {
 	border-radius: 50%;
-}
-
-.banner__principal .container {
-	width: auto;
-	text-align: -webkit-center;
 }
 
 .titulo__principal {
@@ -212,8 +202,6 @@ main {
 @media screen and (min-width: 1480px) {
 
 	.cabecalho {
-		background-color: #FFF;
-		padding: 20px 0;
 		display: flex;
 		flex-direction: column;
 	}

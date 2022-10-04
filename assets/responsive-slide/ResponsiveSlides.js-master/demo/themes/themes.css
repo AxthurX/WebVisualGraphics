@@ -18,9 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
   }
 
-#wrapper {
-  margin-bottom: 50px;
-  }
+
 
 h1 {
   font: 600 28px/36px sans-serif;
@@ -147,6 +145,7 @@ a {
 .large-btns_tabs a {
   text-indent: -9999px;
   overflow: hidden;
+  display: table;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
