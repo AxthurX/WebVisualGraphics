@@ -1,4 +1,5 @@
 @import url('../responsive-slide/ResponsiveSlides.js-master/demo/demo.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 :root {
 	--gradiente: linear-gradient(to left top, #4cb1ea 10%, #0d6efd 90%) !important
@@ -28,7 +29,7 @@ main {
 
 .logotipo {
 	width: 300px;
-	height: 210px;
+	height: 240px;
 	margin: 3px 14px 3px 14px;
 	text-decoration: none;
 	cursor: pointer;
@@ -71,7 +72,7 @@ nav>ul>li:hover>a {
 }
 
 .mega-menu {
-    background: rgb(235, 235, 235);
+    background: rgba(235, 235, 235, 0.824);
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
