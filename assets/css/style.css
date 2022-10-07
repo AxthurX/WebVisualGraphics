@@ -232,7 +232,7 @@ nav>ul>li:hover>a {
 	overflow: hidden;
 	transition: .3s ease;
 	margin: auto auto;
-	margin-bottom: 9rem;
+	margin-bottom: 19rem;
 }
 
 .circulo:hover {
@@ -269,6 +269,8 @@ nav>ul>li:hover>a {
 	border-image-source: var(--gradiente) !important;
 	text-decoration: none;
 	transition: all .4s ease;
+	padding: 0.4rem;
+
 }
 
 .btn:hover, .btn:focus {
