@@ -231,6 +231,7 @@ nav>ul>li:hover>a {
 	overflow: hidden;
 	transition: .3s ease;
 	margin: auto auto;
+	margin-bottom: 9rem;
 }
 
 .circulo:hover {
@@ -251,10 +252,11 @@ nav>ul>li:hover>a {
 .card {
 	background: #222;
 	border: 1px solid #098ab9;
+	border-radius: 9px;
 	color: rgba(250, 250, 250, 0.8);
 	margin-bottom: 2rem;
 	height: 450px !important;
-	margin: 0.1rem;
+	margin: 0.2rem;
 }
 
 .btn {
