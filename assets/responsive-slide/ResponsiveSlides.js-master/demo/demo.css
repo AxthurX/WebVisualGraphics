@@ -78,10 +78,10 @@
   }
 
 .callbacks_container {
-  margin-bottom: 50px;
   position: relative;
   width: 100%;
-  }
+  display: flex;
+}
 
 .callbacks {
   position: relative;
@@ -112,7 +112,7 @@
   display: block;
   position: absolute;
   z-index: 2;
-  font-size: 20px;
+  font-size: 13px;
   color: #fff;
   background: #000;
   background: rgba(0,0,0, .5);

@@ -1,9 +1,11 @@
 @import url('../responsive-slide/ResponsiveSlides.js-master/demo/demo.css');
 
-
+:root {
+	--gradiente: linear-gradient(to left top, #4cb1ea 10%, #0d6efd 90%) !important
+}
 
 body {
-	background: linear-gradient(1deg, hsl(218, 100%, 54%) -15%, #fff 70%);
+	background: linear-gradient(1deg, hsl(218, 100%, 54%) -15%, rgb(249, 251, 252) 80%);
 	/* background-color: #F2F5F7; */
 	font: 14px/20px "Montserrat", sans-serif;
 	margin: auto auto;
@@ -18,30 +20,23 @@ main {
 }
 
 .cabecalho {
-	/* background: linear-gradient(45deg, #a7cfdf 0%,#23538a 100%); */
 	background-color: rgb(203, 215, 255);
-	display: flex;
-	justify-content: center;
+	background-position: center center;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
-	align-items: center;
+	position: relative;
 }
 
-.cabecalho .container {
-	display: flex;
-	align-items: center;
-}
 .logotipo {
-	width: auto;
-	max-height: 134px;
-	padding: 0;
+	width: 300px;
+	height: 210px;
+	margin: 3px 14px 3px 14px;
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 1;
 }
 
-.cabecalho__principal {
-	display: flex;
-}
-
-.menu {
-	display: flex;
+dl, ol, ul {
+	margin: 0 !important;
 }
 
 .menu .container {
@@ -49,13 +44,11 @@ main {
 	width: 100%;
 	height: auto;
 	background-color: #bdc6ff;
-
 }
 
 .menu__principal {
 	display: flex;
 	justify-content: center;
-	text-align: center;
 }
 
 .menu__principal a {
@@ -64,12 +57,13 @@ main {
 }
 
 .menu__principal-link {
-	align-items: center;
-	justify-content: center;
 	font-size: 1rem;
 	margin: .5rem;
 	color: #FFF;
 	margin-left: 1.8rem;
+	border: 1px solid #fff;
+	padding: 0.5rem;
+	border-radius: 5px;
 }
 
 .banner__principal {
@@ -83,9 +77,14 @@ main {
 	display: table;
 }
 
-#wrapper {
+.container #banner {
+	margin-top: 4rem;
+}
+
+#banner {
 	width: 50% ;
 	margin: auto auto;
+	position: relative;
 }
 
 .rslides {
@@ -194,39 +193,33 @@ main {
 .circulo__imagem {
 	width: 100%;
 	height: 100%;
-	display: block	;
+	display: block;
 }
 
-@media screen and (min-width: 768px) {}
+.card {
+	background: #222;
+	border: 1px solid #098ab9;
+	color: rgba(250, 250, 250, 0.8);
+	margin-bottom: 2rem;
+	height: 450px !important;
+}
 
-@media screen and (min-width: 1480px) {
+.btn {
+	border: 5px solid;
+	border-image-slice: 1;
+	background: var(--gradiente) !important;
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+	border-image-source: var(--gradiente) !important;
+	text-decoration: none;
+	transition: all .4s ease;
+}
 
-	.cabecalho {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.cabecalho__principal-link {
-		padding: 10px;
-		font-size: 19px;
-		margin: 0 0 10px 10px;
-		color: #616266;
-		background-color: #FFF;
-		transition: .5s;
-		display: block;
-
-		border-radius: 5px;
-		border: 1px solid #9799A6;
-	}
-
-	.caixas__mensagens-conteudos {
-		border-radius: 10px;
-		width: 48%;
-		height: 260px;
-		background-color: #FFF;
-		margin: 1%;
-		transition: .3s;
-		box-shadow: 2px 2px 2px #CCC;
-		position: relative;
-	}
+.btn:hover, .btn:focus {
+	background: var(--gradiente) !important;
+	-webkit-background-clip: none !important;
+	-webkit-text-fill-color: #fff !important;
+	border: 5px solid #fff !important;
+	box-shadow: #222 1px 0 10px;
+	/* text-decoration: underline; */
 }

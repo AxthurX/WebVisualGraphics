@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
 	<meta charset="utf-8">
 	<title> Site - Web visual</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shorcut icon" type="image/jpg" href="img/favicon (1).ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./responsive-slide/ResponsiveSlides.js-master/responsiveslides.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,61 +37,54 @@
 
 <body>
 
-	<nav class="menu">
+	<header class="menu">
 		<div class="container">
-			<ul class="menu__principal">
+			<ul class="menu__principal">''
 				<li class="menu__principal-link"><a href="https://www.instagram.com/axthurx/">Home</a></li>
 				<li class="menu__principal-link"><a href="https://www.instagram.com/axthurx/">Sobre Nos</a></li>
 				<li class="menu__principal-link"><a href="#">Acessibilidade</a></li>
 				<li class="menu__principal-link"><a href="#">Mais Informaçoes</a></li>
 			</ul>
 		</div>
-	</nav>
-	<header class="cabecalho">
-		<div class="container">
-		<h1 class="cabecalho__titulo">
-			<img src="./img/Logotipo 2.png" class="logotipo"></img>
-		</h1>
-
-			<nav class="cabecalho__principal">
-				<p class="cabecalho__perfil"></p>
-				<button class="cabecalho__notificacao"><i></i></button>
-			</nav>
-		</div>
-
-
 	</header>
 
+	<section class="cabecalho">
+		<div class="container">
+			<!-- <img src="./img/logotipo 4.png" class="logotipo img-fluid"> -->
+			<img src="./img/Logotipo 5.png" class="logotipo img-fluid" alt="logotipo do web visual"></img>
+	</section>
+
 	<section class="container">
-		<div id="wrapper">
+		<div id="banner">
 			<div class="banner__principal">
 				<ul class="rslides" id="slider4">
 					<li>
-						<a href="https://pt-br.facebook.com/"><img class="banner__img" src="./img/facebook.png" alt=""></a>
+						<a href="https://pt-br.facebook.com/"><img class="banner__img" src="./img/facebook.png"
+								alt=""></a>
 						<a class="caption"> Primeira imagem</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/axthurx/"><img class="banner__img" src="./img/download (1).jpg" alt=""></a>
-						<a class="caption"> Segunda imagem</a>
+						<a href="https://www.instagram.com/axthurx/"><img class="banner__img"
+								src="./img/download (1).jpg" alt=""></a>
+						<a class="caption">Segunda imagem</a>
 					</li>
 					<li>
-						<a><img class="banner__img" src="./img/download (2).jpg" alt=""></a>
+						<a><img class="banner__img img-fluid" src="./img/download (2).jpg" alt=""></a>
 						<a class="caption" href="#">Terceira Imagem</a>
 					</li>
 				</ul>
 			</div>
 	</section>
-
 	</div>
 
 	<main class="caixas__mensagens">
-		<section class="container">
-			<h3 class="caixas__mensagens-titulos">Leia Sobre algumas importancias da Acessibilidade </h3>
+		<section class="container-fluid">
+			<h3 class="caixas__mensagens-titulos"></h3>
 
 			<nav class="caixas__conteudos">
 				<div class="caixas__mensagens-caixa">
 					<div class="caixas__mensagens-conteudos">
-						<img class="caixas__mensagens-imagens" src="./img/images.jpg" alt="">
+						<img class="caixas__mensagens-imagens img_fluid" src="./img/images.jpg" alt="">
 						<p class="caixas__mensagens-texto"></p>
 					</div>
 
@@ -107,7 +103,7 @@
 						<p class="caixas__mensagens-texto"></p>
 					</div>
 				</div>
-			</nav>
+				</nac>
 
 		</section>
 		<section class="conteudo">
@@ -127,17 +123,91 @@
 		</section>
 	</main>
 
-
 	<section class="container">
 		<div class="circulo__conteudo">
 			<h4></h4>
 			<div class="circulo">
 				<img class="circulo__imagem" src="./img/download.png" alt="" />
-
 			</div>
-
 		</div>
 	</section>
+
+	<div class="container mx-auto mt-4">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<a href="#" class="btn  mr-2"><i class="fas fa-link"></i> Visit Site</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="width: 18rem;">
+					<img src="https://i.imgur.com/ZTkt4I5.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of
+							the card's content.</p>
+						<a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+					</div>
+				</div>
+			</div>
+
 </body>
 
 </html>
