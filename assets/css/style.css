@@ -2,7 +2,10 @@
 @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 :root {
-	--gradiente: linear-gradient(to left top, #4cb1ea 10%, #0d6efd 90%) !important
+	--gradiente: linear-gradient(to left top, #4cb1ea 10%, #0d6efd 90%) !important;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -24,6 +27,10 @@ main {
 	margin: auto auto;
 }
 
+.teste {
+	font-size: 3rem;
+}
+
 .cabecalho {
 	background-color: rgb(43, 80, 201);
 	background-position: center center;
@@ -39,89 +46,91 @@ main {
 	cursor: pointer;
 	z-index: 1;
 }
+
 /*
 dl, ol, ul {
 	margin: 0 !important;
 } */
 
 .container {
-    margin: auto !important;
-    width: 1000px !important;
+	margin: auto !important;
+	width: 1000px !important;
 }
 
 .nav {
 	background: #114394;
-    font-size: 0;
-    position: relative;
+	font-size: 0;
+	position: relative;
 }
 
-nav>ul>li   {
-    display: inline-block;
-    font-size: 14px;
-    padding: 0 15px;
-    position: relative;
+nav>ul>li {
+	display: inline-block;
+	font-size: 14px;
+	padding: 0 15px;
+	position: relative;
 }
 
 nav>ul>li>a {
-    color: #fff;
-    display: block;
-    padding: 20px 0;
-    border-bottom: 3px solid transparent;
-    transition: all .3s ease;
+	color: #fff;
+	display: block;
+	padding: 20px 0;
+	border-bottom: 3px solid transparent;
+	transition: all .3s ease;
 }
 
 nav>ul>li:hover>a {
-    color: rgba(126, 126, 126, 0.993);
-    border-bottom: 3px solid #444;
+	color: rgba(126, 126, 126, 0.993);
+	border-bottom: 3px solid #444;
 }
 
 .mega-menu {
-    background: rgba(235, 235, 235, 0.824);
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    padding-bottom: 20px;
+	background: rgba(235, 235, 235, 0.824);
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	padding-bottom: 20px;
 	z-index: 4;
 }
 
 .mega-menu h3 {
-    color: #444;
+	color: #444;
 }
 
 .mega-menu .container {
-    display: flex;
+	display: flex;
 }
 
 .mega-menu .item {
-    flex-grow: 1;
-    margin: 0 10px;
+	flex-grow: 1;
+	margin: 0 10px;
 }
+
 /*
 .mega-menu .item img {
     width: 100%;
 } */
 
 .mega-menu a {
-    border-bottom: 1px solid #ddd;
-    color: #2c678b;
-    display: block;
-    padding: 10px 0;
+	border-bottom: 1px solid #ddd;
+	color: #2c678b;
+	display: block;
+	padding: 10px 0;
 }
 
 .mega-menu a:hover {
-    color: #2d6a91;
+	color: #2d6a91;
 }
 
 .dropdown {
-    position: static;
+	position: static;
 }
 
 .dropdown:hover .mega-menu {
-    visibility: visible;
-    opacity: 1;
+	visibility: visible;
+	opacity: 1;
 }
 
 .dropdown__img {
@@ -138,7 +147,7 @@ nav>ul>li:hover>a {
 }
 
 #banner {
-	width: 50% ;
+	width: 50%;
 	margin: auto auto;
 	position: relative;
 }
@@ -190,7 +199,7 @@ nav>ul>li:hover>a {
 	float: left;
 	width: 9%;
 	height: 17%;
-	border: 3px solid #0d4585 ;
+	border: 3px solid #0d4585;
 	margin: .5rem 0 0 .8rem;
 	border-radius: 50%;
 	box-sizing: border-box;
@@ -228,19 +237,56 @@ nav>ul>li:hover>a {
 	z-index: -1;
 }
 
-.conteudo__informacao-2 {
+.conteudo__informacao-segundo {
 	background-color: #616266;
-	width: 44%;
-	height: 340px;
+	width: 43%;
+	height: 320px;
 	float: right;
 	bottom: 100px;
 	position: relative;
+	box-shadow: -13px 0 8px -2px black;
+
+}
+
+.conteudo__informacao-body {
+	margin-top: -0.2rem;
+	padding: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	/* box-shadow: 0% -11px 12px 12px #CCC; */
+}
+
+.conteudo__informacao-titulo {
+	font: 1.5rem 'Roboto', sans-serif;;
+	font-weight: 500;
+	margin: 1rem 0 0.9rem 0 ;
+}
+
+.conteudo__informacao-texto {
+	font-size: 0.9rem;
+	font-weight: 600;
+}
+
+.conteudo__informacao-subtexto {
+	margin: .7rem 0 .9rem 0 ;
+	font-weight: 300;
+}
+
+.conteudo__informacao-btn {
+	width: 120px;
+	height: 34px;
+	padding: .4rem;
+	border: 1px solid #000;
+	border-radius: 17px;
+	position: relative;
+	top: 1rem;
+	font-size: 0.8rem;
 }
 
 .circulo__conteudo {
 	margin-top: 700px;
 	text-align: center;
-
 }
 
 .circulo {
@@ -264,7 +310,7 @@ nav>ul>li:hover>a {
 }
 
 .row {
-	display: flex ;
+	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -309,7 +355,8 @@ nav>ul>li:hover>a {
 	box-sizing: border-box;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
 	background: var(--gradiente) !important;
 	-webkit-background-clip: none !important;
 	-webkit-text-fill-color: #fff !important;
