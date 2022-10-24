@@ -441,10 +441,14 @@
 		}
 	}
 
+	.testeManeiro .container{
+		display: flex;
+		justify-content: center;
+	}
+
 	.row {
 		display: flex;
-		flex-wrap: wrap;
-		 width: max-content;
+		flex-wrap: nowrap;
 	}
 
 	.card {
@@ -543,6 +547,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		place-content: center;
 	}
 
 	.quadrado__informacao {
@@ -552,6 +557,7 @@
 		border-radius: 15px;
 		box-shadow: -13px 0 8px -2px rgb(0, 38, 134);
 		margin: 1rem;
+		transition: .6s;
 	}
 
 	.quadrado__informacao-body {
@@ -585,7 +591,53 @@
 		font-size: 0.8rem;
 	}
 
-	/*
-	i::before {
-		font-size: 50px;
-	} */
+	.quadrado__informacao:hover {
+		transform: translateY(-30px);
+	}
+
+	.containerFinal {
+		margin-top: 30rem;
+		margin-right: -15rem;
+	}
+
+	.final__imagem {
+		border-radius: 50%;
+		background: center/no-repeat;
+		box-sizing: border-box;
+		width: 500px;
+		height: 500px;
+		float: left;
+	}
+
+	.final__texto {
+		font-size: 3rem;
+		width: 50%;
+		text-align: initial;
+		line-height: 1.5;
+		word-break: break-all;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+	.containerM {
+		margin-top: 40rem;
+	}
+
+	.final__outram {
+		width: 500px;
+		height: 500px;
+		border-radius: 50%;
+		box-sizing: border-box;
+		position: relative;
+		left: 560px;
+	}
+
+	.final__caixa {
+		background-color: #fafcff;
+		width: 40%;
+		height: 320px;
+		border-radius: 15px;
+		margin: 1rem;
+		transition: .6s;
+
+	}
