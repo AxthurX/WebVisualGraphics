@@ -53,7 +53,7 @@
 		border: solid 1px black;
 		flex-wrap: nowrap !important;
 		background: linear-gradient(45deg, #fdfd 5%, #fdfdfd 100%);
-		padding: 1rem;
+		padding: 7rem;
 		height: auto;
 	}
 
@@ -118,7 +118,7 @@
 		position: absolute;
 		left: 0;
 		width: 100%;
-		padding-bottom: 20px;
+		padding: 5px;
 		z-index: 4;
 	}
 
@@ -163,6 +163,7 @@
 	.dropdown__img {
 		width: 60px;
 		height: 40px;
+		margin-top: 5px;
 	}
 
 	.callbacks_nav {
@@ -231,7 +232,7 @@
 		height: 230px;
 		background-color: #FFF;
 		margin: 0.5%;
-		box-shadow: 2px 2px 2px #CCC;
+		box-shadow: 2px 2px 2px rgb(148, 148, 148);
 		padding: .4rem;
 	}
 
@@ -297,7 +298,7 @@
 		float: right;
 		bottom: 100px;
 		position: relative;
-		box-shadow: -13px 0 8px -2px rgb(74, 115, 219);
+		box-shadow: -13px 0 8px -2px rgb(141, 169, 241);
 		border-radius: 13px;
 	}
 
@@ -327,15 +328,21 @@
 
 	.conteudo__informacao-btn {
 		background: #fbfbfb;
-		border: 3px solid #000;
+		border: 3px solid rgb(87, 125, 250);
 		border-radius: 17px;
 		color: #000;
 		padding: .4rem;
 		position: relative;
 		top: 1rem;
-		font: 0.8rem 'Roboto', sans-serif;
+		font: 0.9rem 'Roboto', sans-serif;
 		height: 34px;
 		width: 120px;
+		transition: .6s;
+	}
+
+	.conteudo__informacao-btn:hover,
+	.conteudo__informacao-btn:focus {
+		transform: rotateX(180deg);
 	}
 
 	.circulo {
@@ -601,7 +608,7 @@
 	}
 
 	.containerFinal {
-		margin-top: 30rem;
+		margin-top: 15rem;
 		margin-right: -15rem;
 	}
 
@@ -612,7 +619,9 @@
 		width: 300px;
 		height: 300px;
 		float: left;
+		opacity: 0.9 ;
 	}
+
 
 	.final__texto {
 		font-size: 2rem;
@@ -635,7 +644,31 @@
 		right: 8rem;
 		top: 5rem;
 		z-index: 22;
+		animation: rotateZ 2s linear infinite alternate;
+		animation: rotateR 2s linear infinite alternate;
+		opacity: 0.9 ;
 	}
+
+	@keyframes rotateZ {
+		from
+		 {
+			transform: rotateZ(-5deg);
+		}
+		to {
+			transform: rotateZ(5deg);
+		}
+	}
+
+	@keyframes rotateR {
+		from
+		 {
+			transform: rotateZ(5deg);
+		}
+		to {
+			transform: rotateZ(-5deg);
+		}
+	}
+
 
 	.final__caixa {
 		background-color: #fafcff;
@@ -644,7 +677,7 @@
 		border-radius: 15px;
 		transition: .6s;
 		position: relative;
-		bottom: 4rem;
+		bottom: 3rem;
 	}
 
 	.final__conteudo {
@@ -693,3 +726,11 @@
 		box-shadow: #222 1px 0 10px;
 		border-radius: 17px;
 	}
+
+/* 	.vtn {
+		background: var(--gradiente);
+		z-index: -99;
+		height: 150px;
+		width: 100vw;
+		margin-right: 0rem !important;
+	} */
